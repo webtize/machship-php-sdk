@@ -1,0 +1,23 @@
+{
+  "name": "webtize/machship-sdk-v2",
+  "description": "Erply PHP SDK",
+  "type": "library",
+  "license": "mit",
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": ">=7.3",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webtize\\MachShipSDK\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "j1g4r",
+      "email": "jigar@webtize.com.au"
+    }
+  ]
+}
