@@ -4,8 +4,11 @@ namespace Webtize\MachShipSDK;
 
 class ManifestCustomValue
 {
-    public $propertyName;
-    public $value;
+    /** @var string */
+    public string $propertyName;
+
+    /** @var string */
+    public string $value;
 
     public function __construct()
     {

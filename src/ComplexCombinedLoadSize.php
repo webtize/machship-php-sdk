@@ -1,19 +1,25 @@
 <?php
 
 namespace Webtize\MachShipSDK;
-
 class ComplexCombinedLoadSize
 {
-    public $length;
-    public $height;
-    public $weight;
-    public $width;
+    /** @var float */
+    public float $length;
+
+    /** @var float */
+    public float $height;
+
+    /** @var float */
+    public float $weight;
+
+    /** @var float */
+    public float $width;
 
     public function __construct()
     {
-        $this->length = 0;
-        $this->height = 0;
-        $this->weight = 0;
-        $this->width = 0;
+        $this->length = 0.0;
+        $this->height = 0.0;
+        $this->weight = 0.0;
+        $this->width = 0.0;
     }
 }

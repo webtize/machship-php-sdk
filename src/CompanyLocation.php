@@ -4,30 +4,102 @@ namespace Webtize\MachShipSDK;
 
 class CompanyLocation
 {
+    /**
+     * @var int
+     */
     public $id;
+    /**
+     * @var int
+     */
     public $locationType;
+    /**
+     * @var string
+     */
     public $name;
+    /**
+     * @var string
+     */
     public $abbreviation;
+    /**
+     * @var string
+     */
     public $contact;
+    /**
+     * @var string
+     */
     public $phone;
+    /**
+     * @var string
+     */
     public $email;
+    /**
+     * @var string
+     */
     public $addressLine1;
+    /**
+     * @var string
+     */
     public $addressLine2;
+    /**
+     * @var int
+     */
     public $companyId;
+    /**
+     * @var int
+     */
     public $locationId;
+    /**
+     * @var CompanyLocationLocation
+     */
     public $location;
+    /**
+     * @var string
+     */
     public $specialInstructions;
+    /**
+     * @var string
+     */
     public $reference1;
+    /**
+     * @var string
+     */
     public $reference2;
+    /**
+     * @var CompanyLocationTime
+     */
     public $defaultPickupTime;
-    public $defaultClosingTime;
+    /**
+     * @var CompanyLocationTime
+     */
+    public  $defaultClosingTime;
+    /**
+     * @var string
+     */
     public $defaultPickupInstructions;
+    /**
+     * @var false
+     */
     public $isInternational;
+    /**
+     * @var string
+     */
     public $internationalCity;
+    /**
+     * @var string
+     */
     public $internationalPostcode;
+    /**
+     * @var string
+     */
     public $internationalProvince;
+    /**
+     * @var int
+     */
     public $internationalCountryId;
-    public $internationalCountry;
+    /**
+     * @var CompanyLocationCountry
+     */
+    public  $internationalCountry;
 
     public function __construct()
     {

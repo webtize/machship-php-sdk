@@ -1,18 +1,34 @@
 <?php
 
 namespace Webtize\MachShipSDK;
-
 class Complex
 {
-    public $id;
-    public $itemType;
-    public $name;
-    public $sku;
-    public $quantity;
-    public $standardItem;
-    public $combinedItem;
-    public $combinedLoadSize;
-    public $veryFrequentItem;
+    /** @var int */
+    public int $id;
+
+    /** @var int */
+    public int $itemType;
+
+    /** @var string */
+    public string $name;
+
+    /** @var string */
+    public string $sku;
+
+    /** @var int */
+    public int $quantity;
+
+    /** @var ComplexStandardItem */
+    public ComplexStandardItem $standardItem;
+
+    /** @var ComplexCombinedItem */
+    public ComplexCombinedItem $combinedItem;
+
+    /** @var ComplexCombinedLoadSize */
+    public ComplexCombinedLoadSize $combinedLoadSize;
+
+    /** @var bool */
+    public bool $veryFrequentItem;
 
     public function __construct()
     {

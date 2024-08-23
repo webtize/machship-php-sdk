@@ -1,11 +1,13 @@
 <?php
 
 namespace Webtize\MachShipSDK;
-
 class ConsignmentLocation
 {
-    public $suburb;
-    public $postcode;
+    /** @var string */
+    public string $suburb;
+
+    /** @var string */
+    public string $postcode;
 
     public function __construct()
     {

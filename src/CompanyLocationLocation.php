@@ -1,17 +1,31 @@
 <?php
 
 namespace Webtize\MachShipSDK;
-
 class CompanyLocationLocation
 {
-    public $id;
-    public $postcode;
-    public $state;
-    public $timeZone;
-    public $suburb;
-    public $subLocality;
-    public $country;
-    public $locationType;
+    /** @var int */
+    public int $id;
+
+    /** @var string */
+    public string $postcode;
+
+    /** @var CompanyLocationState */
+    public CompanyLocationState $state;
+
+    /** @var string */
+    public string $timeZone;
+
+    /** @var string */
+    public string $suburb;
+
+    /** @var string */
+    public string $subLocality;
+
+    /** @var CompanyLocationCountry */
+    public CompanyLocationCountry $country;
+
+    /** @var int */
+    public int $locationType;
 
     public function __construct()
     {

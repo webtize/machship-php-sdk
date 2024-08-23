@@ -1,12 +1,18 @@
 <?php
 
 namespace Webtize\MachShipSDK;
-
 class CarrierInvoiceStandardItem
 {
+    /** @var int */
     public $height;
+
+    /** @var int */
     public $weight;
+
+    /** @var int */
     public $length;
+
+    /** @var int */
     public $width;
 
     public function __construct()
