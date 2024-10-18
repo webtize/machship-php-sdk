@@ -340,37 +340,37 @@ class MacShipAPI
 
     public static function returnIdentityPublicKeys($data)
     {
-        $url = '/apiv2/identities/returnIdentityPublicKeys';
+        $url = '/identities/returnIdentityPublicKeys';
         return self::postCall2($url, $data);
     }
 
     public static function linkIdentitiesToCompanies($data)
     {
-        $url = '/apiv2/identities/linkIdentitiesToCompanies';
+        $url = '/identities/linkIdentitiesToCompanies';
         return self::postCall2($url, $data);
     }
 
     public static function createIdentities($data)
     {
-        $url = '/apiv2/identities/createIdentities';
+        $url = '/identities/createIdentities';
         return self::postCall2($url, $data);
     }
 
     public static function unlinkIdentitiesFromCompanies($data)
     {
-        $url = '/apiv2/identities/unlinkIdentitiesFromCompanies';
+        $url = '/identities/unlinkIdentitiesFromCompanies';
         return self::postCall2($url, $data);
     }
 
     public static function disableIdentities($data)
     {
-        $url = '/apiv2/identities/disableIdentities';
+        $url = '/identities/disableIdentities';
         return self::postCall2($url, $data);
     }
 
     public static function reenableIdentities($data)
     {
-        $url = '/apiv2/identities/reenableIdentities';
+        $url = '/identities/reenableIdentities';
         return self::postCall2($url, $data);
     }
 
