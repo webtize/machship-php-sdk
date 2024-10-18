@@ -611,49 +611,49 @@ class MacShipAPI
 
     public static function returnItemPdfsForConsignments($data)
     {
-        $url = '/apiv2/labels/returnItemPdfsForConsignments';
+        $url = '/labels/returnItemPdfsForConsignments';
         return self::postCall2($url, $data);
     }
 
     public static function sendLabelsToPrinter($data)
     {
-        $url = '/apiv2/labels/sendLabelsToPrinter';
+        $url = '/labels/sendLabelsToPrinter';
         return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForPrinting($data)
     {
-        $url = '/apiv2/labels/groupConsignmentsForPrinting';
+        $url = '/labels/groupConsignmentsForPrinting';
         return self::postCall2($url, $data);
     }
 
     public static function returnLocations($data)
     {
-        $url = '/apiv2/locations/returnLocations';
+        $url = '/locations/returnLocations';
         return self::postCall2($url, $data);
     }
 
     public static function returnLocationsWithSearchOptions($data)
     {
-        $url = '/apiv2/locations/returnLocationsWithSearchOptions';
+        $url = '/locations/returnLocationsWithSearchOptions';
         return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForManifest($data)
     {
-        $url = '/apiv2/manifests/groupConsignmentsForManifest';
+        $url = '/manifests/groupConsignmentsForManifest';
         return self::postCall2($url, $data);
     }
 
     public static function groupAllUnmanifestedConsignmentsForManifest($data)
     {
-        $url = '/apiv2/manifests/groupAllUnmanifestedConsignmentsForManifest';
+        $url = '/manifests/groupAllUnmanifestedConsignmentsForManifest';
         return self::postCall2($url, $data);
     }
 
     public static function manifest($data)
     {
-        $url = '/apiv2/manifests/manifest';
+        $url = '/manifests/manifest';
         return self::postCall2($url, $data);
     }
 
