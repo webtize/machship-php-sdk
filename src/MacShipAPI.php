@@ -289,7 +289,7 @@ class MacShipAPI
 
     public static function createConsignment(array $data = [])
     {
-        return self::postCall('consignments/createConsignment', $data);
+        return self::postCall2('consignments/createConsignment', $data);
     }
 
     public static function createExistingConsignment(array $data = [])
