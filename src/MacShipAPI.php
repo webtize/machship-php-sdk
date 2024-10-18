@@ -1314,6 +1314,22 @@ class MacShipAPI
         ]);
         return json_decode($response->getBody()->getContents());
     }
+    private static function postCall2($path, $data)
+    {
+        $url = self::$endPoint . $path;
+        $client = new Client(['base_uri' => self::$endPoint]);
+        $response = $client->post($url, [
+            'headers' => [
+                'accept' => 'text/plain',
+                'token' => env('MACSHIP_TOKEN'),
+                'Content-Type' => 'application/json-patch+json'
+            ],
+            'json' => $data
+        ]);
+
+        $responseBody = json_decode($response->getBody(), true);
+        return $responseBody;
+    }
 
     // Perform a GET request to a given path
     private static function getCall($path)
