@@ -63,7 +63,7 @@ class MacShipAPI
         // Construct the path with the company ID
         $path = 'items/createComplex?companyId=' . $companyId;
 
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function deleteItem($companyItemId)
@@ -107,35 +107,35 @@ class MacShipAPI
     public static function returnConsignmentsByPendingConsignmentIds(array $data)
     {
         $path = 'consignments/returnConsignmentsByPendingConsignmentIds';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
 // POST /apiv2/consignments/returnConsignments
     public static function returnConsignments(array $data)
     {
         $path = 'consignments/returnConsignments';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
 // POST /apiv2/consignments/returnConsignmentsByCarrierConsignmentId
     public static function returnConsignmentsByCarrierConsignmentId(array $data)
     {
         $path = 'consignments/returnConsignmentsByCarrierConsignmentId';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
 // POST /apiv2/consignments/returnConsignmentsByReference1
     public static function returnConsignmentsByReference1(array $data)
     {
         $path = 'consignments/returnConsignmentsByReference1';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
 // POST /apiv2/consignments/returnConsignmentsByReference2
     public static function returnConsignmentsByReference2(array $data)
     {
         $path = 'consignments/returnConsignmentsByReference2';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getUnmanifested(array $data = [])
@@ -294,27 +294,27 @@ class MacShipAPI
 
     public static function createExistingConsignment(array $data = [])
     {
-        return self::postCall('consignments/createExistingConsignment', $data);
+        return self::postCall2('consignments/createExistingConsignment', $data);
     }
 
     public static function editUnmanifestedConsignment(array $data = [])
     {
-        return self::postCall('consignments/editUnmanifestedConsignment', $data);
+        return self::postCall2('consignments/editUnmanifestedConsignment', $data);
     }
 
     public static function createConsignmentwithComplexItems(array $data = [])
     {
-        return self::postCall('consignments/createConsignmentwithComplexItems', $data);
+        return self::postCall2('consignments/createConsignmentwithComplexItems', $data);
     }
 
     public static function deleteUnmanifestedConsignments(array $data = [])
     {
-        return self::postCall('consignments/deleteUnmanifestedConsignments', $data);
+        return self::postCall2('consignments/deleteUnmanifestedConsignments', $data);
     }
 
     public static function getAttachments(array $data = [])
     {
-        return self::postCall('consignments/getAttachments', $data);
+        return self::postCall2('consignments/getAttachments', $data);
     }
 
     public static function getConsignmentForClone($id)
@@ -335,43 +335,43 @@ class MacShipAPI
         $path = 'consignments/searchConsignments';
 
         // Call the postCall method with the constructed path and data
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function returnIdentityPublicKeys($data)
     {
         $url = '/apiv2/identities/returnIdentityPublicKeys';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function linkIdentitiesToCompanies($data)
     {
         $url = '/apiv2/identities/linkIdentitiesToCompanies';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function createIdentities($data)
     {
         $url = '/apiv2/identities/createIdentities';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function unlinkIdentitiesFromCompanies($data)
     {
         $url = '/apiv2/identities/unlinkIdentitiesFromCompanies';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function disableIdentities($data)
     {
         $url = '/apiv2/identities/disableIdentities';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function reenableIdentities($data)
     {
         $url = '/apiv2/identities/reenableIdentities';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function getIdentityProvidersForCompany($companyId)
@@ -612,49 +612,49 @@ class MacShipAPI
     public static function returnItemPdfsForConsignments($data)
     {
         $url = '/apiv2/labels/returnItemPdfsForConsignments';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function sendLabelsToPrinter($data)
     {
         $url = '/apiv2/labels/sendLabelsToPrinter';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForPrinting($data)
     {
         $url = '/apiv2/labels/groupConsignmentsForPrinting';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function returnLocations($data)
     {
         $url = '/apiv2/locations/returnLocations';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function returnLocationsWithSearchOptions($data)
     {
         $url = '/apiv2/locations/returnLocationsWithSearchOptions';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForManifest($data)
     {
         $url = '/apiv2/manifests/groupConsignmentsForManifest';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function groupAllUnmanifestedConsignmentsForManifest($data)
     {
         $url = '/apiv2/manifests/groupAllUnmanifestedConsignmentsForManifest';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function manifest($data)
     {
         $url = '/apiv2/manifests/manifest';
-        return self::postCall($url, $data);
+        return self::postCall2($url, $data);
     }
 
     public static function getAllManifests($companyId = null, $startIndex = 1, $retrieveSize = 40, $carrierId = null, $includeChildCompanies = false, $startDate = null, $endDate = null)
@@ -699,12 +699,12 @@ class MacShipAPI
 
     public static function addOrganisationLink($data)
     {
-        return self::postCall('organisationLinks/add', $data);
+        return self::postCall2('organisationLinks/add', $data);
     }
 
     public static function removeOrganisationLink($data)
     {
-        return self::postCall('organisationLinks/remove', $data);
+        return self::postCall2('organisationLinks/remove', $data);
     }
 
     public static function getForOrganisation($organisationId = null)
@@ -812,27 +812,27 @@ class MacShipAPI
 
     public static function returnPendingConsignments($data = [])
     {
-        return self::postCall('pendingConsignments/returnPendingConsignments', $data);
+        return self::postCall2('pendingConsignments/returnPendingConsignments', $data);
     }
 
     public static function returnPendingConsignmentsByReference1($data = [])
     {
-        return self::postCall('pendingConsignments/returnPendingConsignmentsByReference1', $data);
+        return self::postCall2('pendingConsignments/returnPendingConsignmentsByReference1', $data);
     }
 
     public static function returnPendingConsignmentsByReference2($data = [])
     {
-        return self::postCall('pendingConsignments/returnPendingConsignmentsByReference2', $data);
+        return self::postCall2('pendingConsignments/returnPendingConsignmentsByReference2', $data);
     }
 
     public static function createPendingConsignment($data = [])
     {
-        return self::postCall('pendingConsignments/createPendingConsignment', $data);
+        return self::postCall2('pendingConsignments/createPendingConsignment', $data);
     }
 
     public static function deletePendingConsignments($data = [])
     {
-        return self::postCall('pendingConsignments/deletePendingConsignments', $data);
+        return self::postCall2('pendingConsignments/deletePendingConsignments', $data);
     }
 
     public static function getRecentlyCreatedOrUpdatedPendingConsignments($companyId = null, $fromDateUtc = null, $toDateUtc = null, $startIndex = 1, $retrieveSize = 40, $carrierId = null, $includeChildCompanies = false, $getDeleted = false)
@@ -856,13 +856,13 @@ class MacShipAPI
     public static function createQuote($data = [])
     {
         $path = 'quotes/createQuote';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function createQuoteWithComplexItems($data = [])
     {
         $path = 'quotes/createQuoteWithComplexItems';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getAllQuotes($companyId = null)
@@ -894,17 +894,17 @@ class MacShipAPI
 
     public static function returnRoutes($data = [])
     {
-        return self::postCall('routes/returnroutes', $data);
+        return self::postCall2('routes/returnroutes', $data);
     }
 
     public static function returnMultipleRoutes($data = [])
     {
-        return self::postCall('routes/returnmultipleroutes', $data);
+        return self::postCall2('routes/returnmultipleroutes', $data);
     }
 
     public static function returnRoutesWithComplexItems($data = [])
     {
-        return self::postCall('routes/returnrouteswithcomplexitems', $data);
+        return self::postCall2('routes/returnrouteswithcomplexitems', $data);
     }
 
     public static function groupConsignmentsForConsolidation(array $data = [])
@@ -913,7 +913,7 @@ class MacShipAPI
         $path = 'consolidation/groupConsignmentsForConsolidation';
 
         // Call the postCall method to perform the request
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function performConsolidation(array $data = [])
@@ -922,7 +922,7 @@ class MacShipAPI
         $path = 'consolidation/performConsolidation';
 
         // Call the postCall method to perform the request
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function groupAndPerformConsolidation(array $data = [])
@@ -931,7 +931,7 @@ class MacShipAPI
         $path = 'consolidation/groupAndPerformConsolidation';
 
         // Call the postCall method to perform the request
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getAllPosted(array $data = [])
@@ -1075,14 +1075,14 @@ class MacShipAPI
     public static function returnConsignmentStatuses(array $data)
     {
         $path = 'consignments/returnConsignmentStatuses';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
 // POST /apiv2/consignments/updateConsignmentStatuses
     public static function updateConsignmentStatuses(array $data)
     {
         $path = 'consignments/updateConsignmentStatuses';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getConsignment($id, $includeDeleted = false)
@@ -1098,17 +1098,17 @@ class MacShipAPI
     public static function addPermanentPickupsToCompanyLocation(array $data)
     {
         $path = 'companyLocations/addPermanentPickupsToCompanyLocation';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function createCompanyLocation(array $data)
     {
-        return self::postCall('companyLocations/create', $data);
+        return self::postCall2('companyLocations/create', $data);
     }
 
     public static function editCompanyLocation(array $data)
     {
-        return self::postCall('companyLocations/edit', $data);
+        return self::postCall2('companyLocations/edit', $data);
     }
 
     public static function getPermanentPickupsForCompanyLocation($companyLocationId = null)
@@ -1177,13 +1177,13 @@ class MacShipAPI
     {
         $path = 'carrierInvoices/attemptAutoReconciliation';
 
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function updateAndRepriceConsignment($data = [])
     {
         $path = 'carrierInvoices/updateAndRepriceConsignment';
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getEntriesForInvoice($carrierInvoiceId, $status = null)
@@ -1239,7 +1239,7 @@ class MacShipAPI
     {
         $path = 'attachments/uploadAttachments';
 
-        return self::postCall($path, $data);
+        return self::postCall2($path, $data);
     }
 
     public static function getAttachmentsByConsignmentIds($ids = [])
@@ -1300,7 +1300,7 @@ class MacShipAPI
     // Endpoint for authenticating the API; returns a ping response
     public static function authenticate()
     {
-        return self::postCall("authenticate/ping", []);
+        return self::postCall2("authenticate/ping", []);
     }
 
     // Perform a POST request to a given path with specified data
