@@ -340,37 +340,37 @@ class MacShipAPI
 
     public static function returnIdentityPublicKeys($data)
     {
-        $url = '/identities/returnIdentityPublicKeys';
+        $url = 'identities/returnIdentityPublicKeys';
         return self::postCall2($url, $data);
     }
 
     public static function linkIdentitiesToCompanies($data)
     {
-        $url = '/identities/linkIdentitiesToCompanies';
+        $url = 'identities/linkIdentitiesToCompanies';
         return self::postCall2($url, $data);
     }
 
     public static function createIdentities($data)
     {
-        $url = '/identities/createIdentities';
+        $url = 'identities/createIdentities';
         return self::postCall2($url, $data);
     }
 
     public static function unlinkIdentitiesFromCompanies($data)
     {
-        $url = '/identities/unlinkIdentitiesFromCompanies';
+        $url = 'identities/unlinkIdentitiesFromCompanies';
         return self::postCall2($url, $data);
     }
 
     public static function disableIdentities($data)
     {
-        $url = '/identities/disableIdentities';
+        $url = 'identities/disableIdentities';
         return self::postCall2($url, $data);
     }
 
     public static function reenableIdentities($data)
     {
-        $url = '/identities/reenableIdentities';
+        $url = 'identities/reenableIdentities';
         return self::postCall2($url, $data);
     }
 
@@ -611,49 +611,49 @@ class MacShipAPI
 
     public static function returnItemPdfsForConsignments($data)
     {
-        $url = '/labels/returnItemPdfsForConsignments';
+        $url = 'labels/returnItemPdfsForConsignments';
         return self::postCall2($url, $data);
     }
 
     public static function sendLabelsToPrinter($data)
     {
-        $url = '/labels/sendLabelsToPrinter';
+        $url = 'labels/sendLabelsToPrinter';
         return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForPrinting($data)
     {
-        $url = '/labels/groupConsignmentsForPrinting';
+        $url = 'labels/groupConsignmentsForPrinting';
         return self::postCall2($url, $data);
     }
 
     public static function returnLocations($data)
     {
-        $url = '/locations/returnLocations';
+        $url = 'locations/returnLocations';
         return self::postCall2($url, $data);
     }
 
     public static function returnLocationsWithSearchOptions($data)
     {
-        $url = '/locations/returnLocationsWithSearchOptions';
+        $url = 'locations/returnLocationsWithSearchOptions';
         return self::postCall2($url, $data);
     }
 
     public static function groupConsignmentsForManifest($data)
     {
-        $url = '/manifests/groupConsignmentsForManifest';
+        $url = 'manifests/groupConsignmentsForManifest';
         return self::postCall2($url, $data);
     }
 
     public static function groupAllUnmanifestedConsignmentsForManifest($data)
     {
-        $url = '/manifests/groupAllUnmanifestedConsignmentsForManifest';
+        $url = 'manifests/groupAllUnmanifestedConsignmentsForManifest';
         return self::postCall2($url, $data);
     }
 
     public static function manifest($data)
     {
-        $url = '/manifests/manifest';
+        $url = 'manifests/manifest';
         return self::postCall2($url, $data);
     }
 
